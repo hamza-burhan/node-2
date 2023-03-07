@@ -11,13 +11,13 @@ app.use('/login',authr)
 
 
 
-
+const p = 80
 
 app.all('*',(req,res)=>{
     res.status(400).send('Error')
 })
-app.listen(80,()=>{
-    console.log('Server is Listining')
+app.listen(p,()=>{
+    console.log(`Server is Listining on ${p} `)
 })
 
 // server.listen(2000,()=>{console.log('Listning')})
