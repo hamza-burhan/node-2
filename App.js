@@ -16,7 +16,7 @@ app.use('/login',authr)
 app.all('*',(req,res)=>{
     res.status(400).send('Error')
 })
-app.listen(2000,()=>{
+app.listen(80,()=>{
     console.log('Server is Listining')
 })
 
